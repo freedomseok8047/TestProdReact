@@ -33,7 +33,7 @@ import ApiTestKoreaNews from "./ch13_API_PublicDataTest/ApiTestKoreaNews";
 import MainNews from "./ch13_API_PublicDataTest/component/MainNews";
 import NewsPage from "./ch13_API_PublicDataTest/page/NewsPage";
 import TestColorMain from "./ch14_ContextAPITest/TestColorMain";
-import OnlyPublicDataMain from "./ch13_API_PublicDataTest/component/OnlyPublicDataMain";
+import PublicDataPage from "./ch14_ContextAPITest/page/PublicDataPage";
 
 
 function App() {
@@ -71,7 +71,7 @@ function App() {
         <Route path="newsPageTest/:category" element={<NewsPage />} />
         {/* <Route path="contextAPITest" element={<TestColorBox />} /> */}
         <Route path="contextAPITest" element={<TestColorMain/>} />
-        <Route path="onlyPublicDateTest" element={<OnlyPublicDataMain/>} />
+        <Route path="/onlyPublicDateTest/:category" element={<PublicDataPage/>} />
       </Routes>
     </BrowserRouter>
   );

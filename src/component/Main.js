@@ -333,10 +333,10 @@ const Main = () => {
 
           <br />
           <Button
-            title="OnlyPublicDataMain"
+            title="/onlyPublicDateTest/:category"
             type="primary"
             onClick={() => {
-              navigate("/OnlyPublicDataMain");
+              navigate("/onlyPublicDateTest/busanFood");
             }}
           >
             onlyPublicDateTest 확인
