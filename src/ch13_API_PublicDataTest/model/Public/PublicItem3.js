@@ -1,11 +1,11 @@
-// 가을_추천_여행지
+// 한국관광공사_가을_추천_여행지
 // 기존 css 재사용
 // 가져올 데이터 부분 변경
 import React from 'react';
 import styled from 'styled-components';
 // css 작업대상,
 // 1) 이미지, 2) 콘텐츠 내용
-const NewsItemCss = styled.div`
+const PublicItemCss = styled.div`
   display: flex;
   font-family: 'Nanum Gothic', sans-serif;
   /* border: 0.5px solid black; */
@@ -49,13 +49,13 @@ const NewsItemCss = styled.div`
 `;
 
 
-const PublicItem3 = ({article}) => {
+const PublicItem3 = ({publicData}) => {
  // article: 각 기사의 내용을 담은 객체
   // 비구조화 할당으로 각 각 할당
   // 선택할 데이터 : 1)galTitle 2)galWebImageUrl 3)galPhotographyLocation 4)galSearchKeyword
-  const { galTitle, galWebImageUrl,galPhotographyLocation,galSearchKeyword } = article
+  const { galTitle, galWebImageUrl,galPhotographyLocation,galSearchKeyword } = publicData;
   return (
-    <NewsItemCss>
+    <PublicItemCss>
       {/* 조건부 렌더링으로 출력 */}
 
       {
@@ -70,13 +70,15 @@ const PublicItem3 = ({article}) => {
       }
       <div className="contents">
         <h2>
-            {galTitle}
+          <a href="https://www.cwg.go.kr/tour/selectBbsNttView.do?key=663&bbsNo=74&nttNo=65375&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=" target="blank" rel="noopener noreferrer">
+            {galTitle }
+            </a>
         </h2>
         <p>위치 : {galPhotographyLocation}</p>
         <p>설명 : {galSearchKeyword}</p>
       </div>
       
-    </NewsItemCss>
+    </PublicItemCss>
   );
 };
 
