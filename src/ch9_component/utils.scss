@@ -1,0 +1,16 @@
+// 기존 scss에서 사용했던 변수, 함수를 분리
+// 재사용할 변수 색깔 선언
+$red: #fa5252;
+$blue: #339af0;
+$green: #33f056;
+$yellow:rgb(227, 240, 51)0;
+$orange: #f0a733;
+$navy: #3933f0;
+$violet: #a733f0;
+
+// 재사용할 함수 만들기
+@mixin square($size){
+  $caculated : 32px * $size;
+  width: $caculated;
+  height: $caculated;
+}
