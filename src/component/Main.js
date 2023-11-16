@@ -317,7 +317,7 @@ const Main = () => {
               navigate("/newsPageTest/all");
             }}
           >
-            newsPageTest/:category 확인
+            newsPageTest
           </Button>
 
           <br />
