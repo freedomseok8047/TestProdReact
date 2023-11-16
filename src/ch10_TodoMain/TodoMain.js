@@ -3,11 +3,11 @@
 // 자식 : TodoMain.js
 // 1) 제목 2) 입력란 3)리스트 4)리스트의 아이템
 import React, { useCallback,useRef,useReducer } from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import styled from "styled-components";
 
-import { AiFillAndroid } from "react-icons/ai";
-import { AiFillApple } from "react-icons/ai";
+// import { AiFillAndroid } from "react-icons/ai";
+// import { AiFillApple } from "react-icons/ai";
 import TodoBase from "./TodoBase";
 import TodoInsert from "./TodoInsert";
 import TodoList from "./TodoList";

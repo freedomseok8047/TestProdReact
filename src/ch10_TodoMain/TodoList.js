@@ -15,18 +15,17 @@ const Main_css = styled.div`
 `;
 
 // 전체 리스트 부분만 css 작업. TodoListCss
-const TodoListCss = styled.div`
-  min-height: 320px;
-  max-height: 513px;
-  overflow-y: auto;
-`;
+// const TodoListCss = styled.div`
+//   min-height: 320px;
+//   max-height: 513px;
+//   overflow-y: auto;
+// `;
 
 // 부모에서 전달한 props 속성을, 자식 컴포넌트에서 가져오기
-{
-  /* <TodoList todos={todos} /> */
-}
-// 제거하는 함수를 전달받아서 , 사용하기
-{/* <TodoList todos={todos} onRemove={onRemove} /> */}
+// {  /* <TodoList todos={todos} /> */}
+// // 제거하는 함수를 전달받아서 , 사용하기
+// {/* <TodoList todos={todos} onRemove={onRemove} /> */}
+
 const TodoList = ({ todos , onRemove, onToggle}) => {
 
   const rowRender = useCallback(

@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 // 자식 컴포넌트 요소
 import Join from "./component/Join";
 import Main from "./component/Main";
 import MyCount from "./component/MyCount";
-import styled from "styled-components";
+// import styled from "styled-components";
 
-import { Button, Space, DatePicker, version } from "antd";
+// import { Button, Space, DatePicker, version } from "antd";
 // 페이지 이동을 위한 설정 1
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

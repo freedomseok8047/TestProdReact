@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from'styled-components';
-import { AiFillAndroid } from "react-icons/ai";
+// import { AiFillAndroid } from "react-icons/ai";
 import { AiFillApple } from "react-icons/ai";
 // css 구성요소
 // TodoBaseTemp
