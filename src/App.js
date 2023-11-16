@@ -33,7 +33,7 @@ import ApiTestKoreaNews from "./ch13_API_PublicDataTest/ApiTestKoreaNews";
 import MainNews from "./ch13_API_PublicDataTest/component/MainNews";
 import NewsPage from "./ch13_API_PublicDataTest/page/NewsPage";
 import TestColorMain from "./ch14_ContextAPITest/TestColorMain";
-import PublicDataPage from "./ch14_ContextAPITest/page/PublicDataPage";
+import PublicDataPage from "./ch13_API_PublicDataTest/page/PublicDataPage";
 
 
 function App() {

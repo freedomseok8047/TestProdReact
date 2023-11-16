@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import NewsItem from "../model/NewsItem";
+import NewsItem from "../model/News/NewsItem";
 import axios from "axios";
-import PublicItem from "../model/PublicItem";
-import PublicItem2 from "../model/PublicItem2";
+import PublicItem from "../model/News/PublicItem";
+import PublicItem2 from "../model/News/PublicItem2";
 
 // 뉴스 아이템 요소를 출력을 감싸는 목록부분에 해당하고,
 // 미디어쿼리 넣어서, 약간 반응형으로, 특정 크기를 기준으로
