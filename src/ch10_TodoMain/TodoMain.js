@@ -12,7 +12,7 @@ import TodoBase from "./TodoBase";
 import TodoInsert from "./TodoInsert";
 import TodoList from "./TodoList";
 
-const Main_css = styled.div`
+const MainCss = styled.div`
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -191,7 +191,7 @@ const [todos, dispatch] = useReducer(todoReducer, undefined,createBulkTodos);
   )
 
   return (
-    <Main_css>
+    <MainCss>
       <TodoBase>
         {/* 위에서 만든 useCallback 함수를 자식 컴포넌트에게 전달하기. */}
         <TodoInsert onInsert={onInsert} />
@@ -200,7 +200,7 @@ const [todos, dispatch] = useReducer(todoReducer, undefined,createBulkTodos);
         {/* 체크하는 함수를 props이용해서 전달 */}
         <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle}/>
       </TodoBase>
-    </Main_css>
+    </MainCss>
   );
 };
 
